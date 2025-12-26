@@ -17,9 +17,9 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
-from predictor import views  # Import the views from your app
+from predictor import views 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='home'),  # This tells Django to show your predictor on the home page
+    path('', views.index, name='home'),  
 ]
