@@ -5,7 +5,7 @@ import numpy as np
 # Load the model
 model = joblib.load('placement_model.joblib')
 
-def index(request):  # <--- This name must match the one in urls.py
+def index(request):  
     result = None
     if request.method == 'POST':
         cgpa = float(request.POST.get('cgpa'))
@@ -17,5 +17,5 @@ def index(request):  # <--- This name must match the one in urls.py
         
         result = "Placed! 🎉" if prediction == 1 else "Keep working! 💪"
 
-    # Make sure the template path is correct
+    
     return render(request, 'predictor/index.html', {'result': result})
