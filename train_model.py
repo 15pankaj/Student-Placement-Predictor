@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 import joblib
 
-# 1. Create dummy data (In real life, use a CSV)
+# 1. Create dummy data for training
 data = {
     'cgpa': [8.5, 7.0, 9.2, 6.5, 8.0, 5.5],
     'internships': [2, 0, 3, 1, 2, 0],
